@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Дополнительные стили */
+.hidden {
+  display: none;
+  text-align: center;
+  font-family: cursive;
+  background-image:url('/Pictures/mainwppsecretpagee.jpg');
+  min-width: 1300px;
+  background-size: cover;
+  background-attachment: fixed; /* Зафиксировать фон */
+  margin: 0;
+  padding: 0;
+  color:#5499d2;
+  
+}
+
+.password-4site{
+  text-align: center;
+  background-color: #5499d2;
+}
+
+.main-4site-info{
+  margin-top: 50px;
+}

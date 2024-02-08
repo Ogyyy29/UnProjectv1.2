@@ -1,0 +1,103 @@
+body{
+  font-family: cursive;
+  background-image:url('/Pictures/mainwppsecretpagee.jpg');
+  min-width: 1300px;
+  background-size: cover;
+  background-attachment: fixed; /* Зафиксировать фон */
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  opacity: 0; /* Начальное значение прозрачности */
+  transform: translateY(20px); /* Начальное значение смещения по оси Y */
+  transition: opacity 4s ease, transform 3s ease; /* Длительность и функция сглаживания для анимации */
+}
+
+.visible {
+  opacity: 1; /* Конечное значение прозрачности */
+  transform: translateY(0); /* Конечное значение смещения по оси Y */
+}
+h1{
+  color: #5499d2;
+  text-align: center;
+}
+
+
+.distortion {
+  position: fixed;
+  pointer-events: none; /* Чтобы элемент не мешал взаимодействию с другими элементами */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/Pictures/mainwppsecretpagee.jpg');
+  background-size: cover;
+  z-index: -1; /* Помещаем его позади других элементов */
+  transition: transform 0.4s ease; /* Анимация искажения */
+}
+
+a{
+  text-decoration: none;
+  color: #5499d2;
+}
+
+li{
+  color: #5499d2;
+  margin-bottom: 50px;
+}
+
+ul{
+  list-style-type: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 15px;
+}
+
+.nav-panel{
+  display: flex;
+  width: 20%; /* Задаем ширину 20% */
+  left: 0; /* Отступ слева */
+  border-right: #5499d2 2px solid;
+}
+
+.main-ch {
+  width: 80%; /* Занимает оставшиеся 80% ширины экрана */
+  display: flex;
+}
+
+.game-list {
+  margin-bottom: 30px; /* Добавляем отступ снизу */
+}
+
+.site{
+  display: flex;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(20);
+    opacity: 0;
+  }
+}
+
+.explosion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.5); /* Цвет взрыва (полупрозрачный красный) */
+  animation: explode 0.5s ease;
+  z-index: 9999; /* Помещаем поверх других элементов */
+}
+
+.main-ch{
+  justify-content: center;
+}
+
+

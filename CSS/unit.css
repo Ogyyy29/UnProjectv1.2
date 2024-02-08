@@ -1,0 +1,581 @@
+body{
+  background-color: #f5f5f5;
+  background-image: url('../Pictures/mainfone.jpg');
+  background-size: cover;
+}
+
+*{
+  margin:0;
+}
+
+.all-site{
+  min-width: 1500px;
+}
+
+/* Навигационная панель */
+div {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-row: auto;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-right: 20px;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Привественный текст */
+h1{
+    font-family:cursive;
+    color: #333;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+h1:hover{
+  color:chartreuse;
+}
+
+.logo {
+  top: 20px; /* Расстояние от верхнего края (можете настроить по вашему желанию) */
+  right: 20px; /* Расстояние от правого края (можете настроить по вашему желанию) */
+  max-width: 100px; /* Максимальная ширина логотипа */
+  height: auto; /* Поддержка пропорций */
+  margin-left: 250px;
+}
+
+.logo-welcome{
+  display:flex;
+  justify-content: center;
+  margin-left: 350px;
+}
+
+.nav-h1{
+  display: block;
+  background-image: url('../Pictures/фон1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  padding: 20px;
+  
+}
+
+/* Слоган с анимацией */
+.slogan {
+  font-size: 24px;
+  opacity: 0; /* Начальная прозрачность для анимации появления */
+  animation: fadeInOut 5s ease infinite; /* Анимация появления и мигания */
+  text-align: center;
+  font-family: cursive;
+  font-weight: normal;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Нав панель с анимацией */
+.nav-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  color: #56ab2f; /* Цвет при наведении */
+  background-color: #fff; /* Фон при наведении */
+  transform: rotate(15deg); /* Вращение при наведении */
+  border: #333 solid 2px;
+}
+
+/* Линяя на всю ширину */
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.photo-block {
+  max-width: 480px;
+  margin: 20px auto;
+  border: 2px solid #549a9a;
+  border-radius: 10px;
+  overflow: hidden; /* Обрезаем содержимое, чтобы не выходило за рамку */
+  background-color: #fff; /* Цвет фона блока с картинками */
+  background-image: url('../Pictures/фон\ для\ блока\ фото.jpg'); /* Путь к изображению фона */
+  background-size: cover; /* Масштабирование изображения, чтобы заполнить весь блок */
+}
+
+.photo-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-item {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.photo-item img {
+  max-width: 100%;
+  height: 100%; /* Относительная высота */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.description {
+  text-align: center;
+  padding: 10px;
+}
+
+.description p {
+  font-size: 14px;
+  color:cornsilk;
+  padding: 2px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* #zatemnenie {
+  background: rgba(102, 102, 102, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#okno {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+  border: 3px solid #0000cc;
+  border-radius: 10px;
+  color: #0000cc;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #fff;
+}
+#zatemnenie:target {display: block;}
+.close {
+  display: inline-block;
+  border: 1px solid #0000cc;
+  color: #0000cc;
+  padding: 0 12px;
+  margin: 10px;
+  text-decoration: none;
+  background: #f2f2f2;
+  font-size: 14pt;
+  cursor:pointer;
+}
+.close:hover {background: #e6e6ff;} */
+
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+  display:flex;
+  justify-content: center;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #33dd23;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-search[type="text"] {
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+}
+
+.search-button:hover {
+  background-color: #006319;
+}
+
+
+.photo-univer{
+  max-width: 500px;
+  margin: 20px auto;
+  border: 2px solid #549a9a;
+  border-radius: 10px;
+  overflow: hidden; /* Обрезаем содержимое, чтобы не выходило за рамку */
+  background-color: #fff; /* Цвет фона блока с картинками */
+  background-image: url('../Pictures/фон\ для\ блока\ фото.jpg'); /* Путь к изображению фона */
+  background-size: cover; /* Масштабирование изображения, чтобы заполнить весь блок */
+  display:inline-block;
+  padding: 10px;
+}
+
+.photo-stud{
+  max-width: 480px;
+  min-width: 480px;
+  margin: 20px auto;
+  border: 2px solid #549a9a;
+  border-radius: 10px;
+  overflow: hidden; /* Обрезаем содержимое, чтобы не выходило за рамку */
+  background-color: #fff; /* Цвет фона блока с картинками */
+  background-image: url('../Pictures/фон\ для\ блока\ фото.jpg'); /* Путь к изображению фона */
+  background-size: cover; /* Масштабирование изображения, чтобы заполнить весь блок */
+  display:inline-block; 
+}
+
+.photo-gg{
+  display: flex;
+}
+
+.line-2 {
+  width: 60%;
+  height: 2px;
+  background-color: #d46d1f;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.main-chapter{
+  display: block;
+}
+
+.second-chapter{
+display: block;
+animation: backgroundAnimation 5s infinite alternate; /* Анимация изменения цвета фона */
+margin: 0;
+padding: 0;
+padding-top: 3px;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #63a69f; /* Начальный цвет фона */
+  }
+  50% {
+    background-color: #bb8c4b; /* Промежуточный цвет фона */
+  }
+  100% {
+    background-color: #843b62; /* Конечный цвет фона */
+  }
+}
+
+.second-chapter>nav>ol>p{
+  color: #ddd;
+  font-family: cursive;
+  font-size: 12px;
+  margin: 4;
+}
+
+.social-buttons {
+  text-align: center;
+  margin: 2px;
+}
+
+.social-button {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.social-button img {
+  width: 40px; /* Размер иконки, укажите подходящий размер */
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-buttons>a:hover img {
+  transform: rotate(360deg);
+}
+
+.carousel-container {
+  overflow: hidden;
+  max-width: 40%;
+  max-height:auto; /* Установите высоту карусели по вашему желанию */
+  border: 2px solid #549a9a;
+  border-radius: 10px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center; /* Центрируем содержимое */
+  box-sizing: border-box; /* Учитываем границы в размере элемента */
+}
+
+.carousel {
+  display:flex;
+  transition: transform 0.5s ease-in-out;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0; /* Убираем отступы между изображениями */
+}
+
+.carousel-item {
+  width: 100%;
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+/* блок - мероприятия */
+.events-block {
+  background-image: url('../Pictures/фон1.jpg');
+  border: 2px solid #549a9a;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px; /* Установите ширину блока по вашему желанию */
+  box-sizing: border-box;
+}
+
+.events-block h3 {
+  color: #549a9a;
+}
+
+.events-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.events-block li {
+  margin-bottom: 15px;
+}
+
+.events-block h4 {
+  color: #333;
+}
+
+/* блок - исследования */
+.research-block {
+  background-image: url('../Pictures/фон1.jpg');
+  border: 2px solid #549a9a;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px; /* Установите ширину блока по вашему желанию */
+  box-sizing: border-box;
+}
+
+.research-block h3 {
+  color: #549a9a;
+}
+
+.research-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.research-block li {
+  margin-bottom: 15px;
+}
+
+.research-block h4 {
+  color: #333;
+}
+
+.c-e-r{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  position: relative;
+}
+
+.separator-line {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc; /* Цвет линии */
+  margin-top: 20px; /* Расстояние от линии до верхнего блока */
+  margin-bottom: 20px; /* Расстояние от линии до нижнего блока */
+}
+
+.line-dd{
+  width: 60%;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.vertical-line{
+  height: 30%;
+  width: 2px;
+  background-color: #ccc; /* Цвет линии */
+  position:absolute;
+  top: 30%;
+  bottom: 0;
+
+}
+
+.vertical-line-2{
+  height: 30%;
+  width: 2px;
+  background-color: #ccc; /* Цвет линии */
+  position: absolute;
+  top: 30%;
+  bottom: 0;
+  
+}
+
+.vertical-line {
+  left: 28.5% ; /* Линия между events-block и carousel-container */
+  background: linear-gradient(to bottom, #3498db, #ccc);
+}
+
+.vertical-line-2 {
+  right:28.5% ; /* Линия между carousel-container и research-block */
+  background: linear-gradient(to bottom, #3498db, #ccc);
+}
+
+/* Кнопка входа */
+.button-enter{
+margin: 0;
+padding: 0;
+}
+
+.buttondd {
+  padding: 10px;
+  font-size: 14px;
+  margin:0 ;
+margin-left: 9px;
+background-color: #bbf4ddea;
+display: inline;
+}
+
+.buttondd:hover{
+  background: linear-gradient(to right, #34db77, #b0f10c); /* Градиентный эффект при наведении */
+  color: #fff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10% auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.labeldd {
+  margin-bottom: 5px;
+}
+
+.buttonff {
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #6dbbee;
+}
+ 
+/* Всплывающая панель Контакты */
+
+
+/* Всплывающая панель Абитуриенту */
+.dropdown-content-abiturientu {
+  display: none;
+  position: absolute;
+  background-color: #56b6e2;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.8s ease; /* Анимация плавного появления */
+  border: #333 solid 2px;
+}
+
+.dropdown-abiturientu:hover .dropdown-content-abiturientu {
+  display: block;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-item {
+  cursor: pointer;
+  color: blue;
+  margin-bottom: 40px;
+  font-family:cursive;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.dropdown-content-abiturientu>.dropdown-item:hover{
+  background-color: #33dd23;
+}
+

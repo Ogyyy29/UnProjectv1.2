@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERROR</title>
+  <link rel="stylesheet" href="CSS/error.css">
+  <script src="JS/error.js"></script>
+</head>
+<body>
+  <!-- Форма для ввода пароля -->
+  <div class="password-4site">
+    <label for="password">Введите пароль:</label>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">Проверить пароль</button>
+    <p class="attempts" id="attemptsLeft">3 попытки</p>
+  </div>
+
+ <!-- Содержимое сайта (скрыто до ввода правильного пароля) -->
+ <div id="siteContent" class="hidden">
+
+  <!-- Здесь ваш контент сайта -->
+  <div class="welcome-site">
+    <h1>Поздравляю, ты взломал Пентагон</h1>
+    <p>(а если серьезно - ты теперь мне должен free handred bucks)</p>
+  </div>
+
+  <div class="main-4site-info">
+    <p>
+      В будущем здесь будет какая-нибудь полезная инфа, а пока что любуйтесь этим фото
+    </p>
+    <img src="https://images.techinsider.ru/upload/img_cache/7de/7dec48705eb1af4e4713b5ce0a39fafd_cropped_666x500.jpg" alt="собака с улыбкой">
+  </div>
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ГАУ Северного Зауралья</title>
+  <link rel="stylesheet" href="CSS/unit.css">
+  <script src="JS/unit.js"></script>
+  
+</head>
+
+<body>
+<div class="all-site">
+  
+  <div class="main-chapter">
+
+    
+    <div class="nav-h1">
+        <div class="logo-welcome">
+          <h1>
+            Добро пожаловать в аграрный университет!
+          </h1>
+          <img src="https://www.tsaa.ru/content/galleries/482/original/gausz_logotip_3.png" class="logo" alt="лого универа">
+        </div>
+        <h2 class="slogan" id="animated-slogan">
+          Познание Земли. Рост Будущего.
+        </h2>
+  
+        <div class="button-enter">
+          <button class="buttondd" id="loginBtn" onclick="toggleModal()">Вход</button>
+          
+          <div id="loginModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="toggleModal()">&times;</span>
+              <h2>Вход в аккаунт</h2>
+              <form id="loginForm" onsubmit="login(event)">
+                <label for="username">Логин:</label>
+                <input class="buttonff" type="text" id="username" name="username" required>
+          
+                <label for="password">Пароль:</label>
+                <input class="buttonff" type="password" id="password" name="password" required>
+          
+                <button type="submit">Войти</button>
+              </form>
+            </div>
+          </div>
+        </div>
+  
+        <nav>
+          <ul>
+            <li><a href="#" class="nav-link">О нас</a></li>
+            <li>
+              <div class="dropdown-abiturientu">
+                <a href="#" class="nav-link">Абитуриенту</a>
+                <div class="dropdown-content-abiturientu" onmouseleave="hideDropdownAbiturientu()">
+                  <p class="dropdown-item">Процесс поступления</p>
+                  <p class="dropdown-item">Информация о программах обучения</p>
+                  <p class="dropdown-item">Финансовая поддержка</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#" class="nav-link">Образование</a></li>
+            <li><a href="#" class="nav-link">Наука и исследования</a></li>
+            <li><a href="#" class="nav-link">Спорт</a></li>
+            <li><a href="#" class="nav-link">Новости и события</a></li>
+            <li>
+                <a href="#" class="nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    
+      <div class="line" ></div>
+    
+      <div class="search-container">
+        <input class="input-search" type="text" placeholder="Поиск...">
+        <button class="search-button">Поиск</button>
+      </div>
+
+      <div class="photo-gg">
+        <div class="photo-block">
+          <div class="photo-row">
+            <div class="photo-item">
+              <img src="https://sun9-33.userapi.com/impf/c638118/v638118080/3819a/i6NMiJ1OTBc.jpg?size=807x538&quality=96&sign=88912da29227b484d953fdae9c560740&c_uniq_tag=jq5Ax1UO98D-Yo4Jw7vbPg6y9vNTvhkjHL6Nr_fkD7s&type=album" alt="Фото 1">
+            </div>
+            <div class="photo-item">
+              <img src="https://www.tsaa.ru/content/galleries/1867/original/img_1119.jpg" alt="Фото 2">
+            </div>
+          </div>
+          <div class="photo-row">
+            <div class="photo-item">
+              <img src="https://www.tsaa.ru/content/images/News/vyistavka-chelyabinsk.jpg" alt="Фото 3">
+            </div>
+            <div class="photo-item">
+              <img src="https://www.tsaa.ru/content/drgalleries/6333/big_ed84f218f4f2a7758372d28921e8a97e_den-rajona-11.jpg" alt="Фото 4">
+            </div>
+          </div>
+          <div class="description">
+            <p>Погрузитесь в уникальный мир аграрных занятий – наш университет предлагает не просто учебу, а настоящее погружение в зеленые лаборатории, бескрайние поля и инновационные исследования. Здесь каждый студент становится частью процесса роста, изучая землю с самого близкого расстояния.</p>
+          </div>
+        </div>
+      
+        <div class="photo-univer">
+          <div class="photo-row">
+            <div class="photo-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nGJmXi7oYP6hgrdbFRFmiQTcd3p2-oKMgA&usqp=CAU" alt="Фото 1">
+            </div>
+            <div class="photo-item">
+              <img src="https://www.tsaa.ru/content/images/News/May2022/1-korpus_gausz.jpg" alt="Фото 2">
+            </div>
+          </div>
+          <div class="photo-row">
+            <div class="photo-item">
+            <img src="https://www.tsaa.ru/content/images/News/May2022/ovqv00wdsbswfl68gi2pumdc7p6iwf0rkfkcnf0qctc2rxiqibtiqnnkgnjpfhhlhs7gnn8xdguigr4mhhbu55c6.jpg" alt="Фото 3">
+            </div>
+            <div class="photo-item">
+            <img src="https://avatars.mds.yandex.net/get-altay/11421964/2a0000018c39a9a91556f622b8c09bd5f61a/L_height">
+            </div>
+          </div>
+          <div class="description">
+            <p> От зеленых аллей до старинных зданий, эти изображения являются свидетельством того, как наш университет преобразовывается, сохраняя свое уникальное наследие. Откройте дверь в прошлое, взгляните на наше прежнее великолепие и готовьтесь к новой эре в истории нашего образовательного учреждения.</p>
+          </div>
+        </div>
+      
+        <div class="photo-stud">
+          <div class="photo-row">
+            <div class="photo-item">
+              <img src="https://www.tsaa.ru/content/images/News/May2022/u-pamyatnika.jpg?cecutient=1">
+            </div>
+            <div class="photo-item">
+              <img src="https://www.tsaa.ru/content/images/News/Sep2022/photo_2023-05-19_20-42-11.jpg">
+            </div>
+          </div>
+          <div class="photo-row">
+            <div class="photo-item">
+              <img src="https://www.tsaa.ru/content/drgalleries/1/big_62f9c78c5a7d897386791bdfb4eb5535_img_20231004_202429_065.jpg">
+            </div>
+            <div class="photo-item">
+              <img src="https://www.tsaa.ru/content/drgalleries/6143/big_680821e98568fa49f1074acf7eb46843_sgtzcsm1qyu.jpg">
+            </div>
+          </div>
+          <div class="description">
+            <p>Совместное обучение и вдохновение: краткий взгляд на наших студентов и преподавательский состав. В этой коллекции отражены моменты обучения и сотрудничества, где развиваются знания и формируется теплая образовательная обстановка. Университет — место, где умы соединяются, а сердца наполняются стремлением к знанию и совместному росту.
+              
+            </p>
+          </div>
+        </div>
+      </div>
+        
+      <div class="line-dd" ></div>
+
+      <div class="c-e-r">
+  
+        <div class="events-block">
+        <h3>Ближайшие мероприятия</h3>
+        <ul>
+          <li>
+            <h4>Мероприятие 1</h4>
+            <p>Описание мероприятия 1. Дата: ДД.ММ.ГГГГ</p>
+          </li>
+          <li>
+            <h4>Мероприятие 2</h4>
+            <p>Описание мероприятия 2. Дата: ДД.ММ.ГГГГ</p>
+          </li>
+          <!-- Добавьте дополнительные элементы по необходимости -->
+        </ul>
+      </div>
+  
+  <div class="vertical-line"></div>
+  
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-item">
+              <img src="https://www.tsaa.ru/content/images/News/May2022/1-korpus_gausz.jpg" alt="Фото универа">
+            </div>
+            <div class="carousel-item">
+              <img src="https://smapse.ru/storage/2023/05/smapse-gosudarstvennyj-agrarnyj-universitet-severnogo-zaural-a-2.jpg" alt="Фото универа">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.tsaa.ru/content/images/News/Feb2022/img_7869-2.jpg" alt="Фото универа">
+            </div>
+            <!-- Добавьте дополнительные элементы по необходимости -->
+          </div>
+        </div>
+  
+        <div class="vertical-line-2"></div>
+  
+        <div class="research-block">
+          <h3>Свежие исследования</h3>
+          <ul>
+            <li>
+              <h4>Исследование 1</h4>
+              <p>Краткое описание исследования 1. Дата публикации: ДД.ММ.ГГГГ</p>
+            </li>
+            <li>
+              <h4>Исследование 2</h4>
+              <p>Краткое описание исследования 2. Дата публикации: ДД.ММ.ГГГГ</p>
+            </li>
+            <!-- Добавьте дополнительные элементы по необходимости -->
+          </ul>
+        </div>
+      </div>
+  
+      <div class="line-2" ></div>
+    </div>
+  
+    <div class="second-chapter">
+  <nav>
+    <ol>
+      <p>Телефон приемной комиссии - 99999999</p>
+      <p>Телефон университета - 99999999</p>
+      <p>Электронная почта-ляляля</p>
+      <p>График работы</p>
+    </ol>
+  </nav>
+  
+  <div class="social-buttons">
+    <a href="https://vk.com/gausz_live" target="_blank" class="social-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/VK_Logo.png" alt="VK">
+    </a>
+  
+    <a href="https://www.instagram.com/gausz_live/" target="_blank" class="social-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Instagram">
+    </a>
+  </div>
+    </div>
+</div>
+
+</body>
+</html>

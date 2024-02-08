@@ -1,0 +1,25 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  color: lime;
+  text-align: center;
+}
+
+.hacker-simulator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#output {
+  font-size: 18px;
+  white-space: pre-wrap;
+  overflow: hidden;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: lime; }
+}
