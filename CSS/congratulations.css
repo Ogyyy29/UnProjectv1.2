@@ -1,6 +1,6 @@
 body{
   font-family: cursive;
-  background-image:url('/Pictures/mainwppsecretpagee.jpg');
+  background-image:url('../Pictures/mainwppsecretpagee.jpg');
   min-width: 1300px;
   background-size: cover;
   background-attachment: fixed; /* Зафиксировать фон */
