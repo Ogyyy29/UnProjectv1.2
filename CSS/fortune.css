@@ -13,7 +13,7 @@ body {
   /* если что-то не помещается на своё место — скрываем то, что не поместилось */
   overflow: hidden;
   font-family: cursive;
-  background-image:url('/Pictures/mainwppsecretpagee.jpg');
+  background-image:url('../Pictures/mainwppsecretpagee.jpg');
   min-width: 500px;
   background-size: cover;
   background-attachment: fixed; /* Зафиксировать фон */
